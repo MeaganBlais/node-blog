@@ -35,7 +35,7 @@ const posts = [
 app.set('view engine', 'ejs')
 
 // blog home page
-app.get('/', req, res => {
+app.get('/', (req, res) => {
     // render `home.ejs` with the list of posts
     res.render('home', { posts: posts })
 })
